@@ -19,7 +19,7 @@
     <title>Portfolio | Manimegalan M</title>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="0">
+<body data-spy="scroll" data-target="#navbar-scrollspy" data-offset="10">
     <div class="container-fluid">
 
         <!-- Menu Bar Starts -->
@@ -53,7 +53,18 @@
 
         <!-- Side Menu Starts -->
         <section class="left">
-
+            <div class="photo"><img src="img/profile.jpg" alt="" width="190" class="rounded-circle"></div>
+            <nav id="navbar-scrollspy" class="navbar navbar-expand-lg navbar-dark">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-flex flex-column text-center">
+                        <a class="nav-item nav-link" href="#about">About</a>
+                        <a class="nav-item nav-link" href="#experience">Experience</a>
+                        <a class="nav-item nav-link" href="#education">Education</a>
+                        <a class="nav-item nav-link" href="#skills">Skills</a>
+                        <a class="nav-item nav-link" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
         </section>
         <!-- Side Menu Ends -->
 
@@ -75,7 +86,7 @@
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make a type specimen book.
                 </p>
-                
+
                 <div class="icon">
                     <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/manimegalan-m-60051261/">
                         <svg class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" focusable="false"
@@ -119,12 +130,16 @@
 
             <!-- Experience -->
             <div id="experience">
-                <h2>Experience</h2>
+                <h2 class="exp">Experience</h2>
                 <div class="project">
-                    <div class="item 1"><a href="projects/Animated_Background/index.html" target="_blank"><img src="img/project/animated_background.png" alt=""></a></div>
-                    <div class="item 2"><a href="projects/Hamburger_Animated_Menu/index.html.html" target="_blank"><img src="img/project/animated_hamburgermenu.png" alt=""></a></div>
-                    <div class="item 3"><a href="projects/Image_hover/index.html" target="_blank"><img src="img/project/image_hovereffect.png" alt=""></a></div>
-                    <div class="item 4"><a href="projects/Snap_Scroll/index.html" target="_blank"><img src="img/project/snap_scroll.png" alt=""></a></div>
+                    <div class="item 1"><a href="projects/Animated_Background/index.html" target="_blank"><img
+                                src="img/project/animated_background.png" alt=""></a></div>
+                    <div class="item 2"><a href="projects/Hamburger_Animated_Menu/index.html.html" target="_blank"><img
+                                src="img/project/animated_hamburgermenu.png" alt=""></a></div>
+                    <div class="item 3"><a href="projects/Image_hover/index.html" target="_blank"><img
+                                src="img/project/image_hovereffect.png" alt=""></a></div>
+                    <div class="item 4"><a href="projects/Snap_Scroll/index.html" target="_blank"><img
+                                src="img/project/snap_scroll.png" alt=""></a></div>
                 </div>
             </div>
 
@@ -170,23 +185,24 @@
 
             <!-- Contact -->
             <div id="contact">
-                
+
                 <div class="container">
                     <h2 class="text-center">Contact</h2>
                     <form action="/action_page.php">
-                      <label for="fname">First Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                  
-                      <label for="lname">Last Name</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                  
-                      <label for="subject">Subject</label>
-                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                  
-                      <input type="submit" value="Submit">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
                     </form>
-                  </div>
+                </div>
             </div>
 
         </section>

@@ -7,7 +7,11 @@ html {
   padding: 0;
 }
 
-.navbar {
+.top {
+  display: block;
+}
+
+.top .navbar {
   background-color: #bd5d38;
   position: fixed;
   left: 0;
@@ -16,14 +20,14 @@ html {
   z-index: 100;
 }
 
-.navbar .navbar-brand {
+.top .navbar .navbar-brand {
   font-family: 'Muli', sans-serif;
   font-size: 1.7rem;
   font-weight: 800;
   letter-spacing: 2px;
 }
 
-.navbar .navbar-collapse .menu {
+.top .navbar .navbar-collapse .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,19 +36,62 @@ html {
           justify-content: space-between;
 }
 
-.navbar .navbar-collapse .menu .logo {
+.top .navbar .navbar-collapse .menu .logo {
   margin-left: 2rem;
 }
 
-.navbar .navbar-collapse .menu .nav-link {
+.top .navbar .navbar-collapse .menu .nav-link {
   font-family: 'Muli', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   text-align: right;
 }
 
+.left {
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  background: #bd5d38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left .rounded-circle {
+  border: 10px solid #ffffff36;
+}
+
+.left .navbar-nav {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 2rem;
+}
+
+.left .navbar-nav a {
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.left .navbar-nav a:hover {
+  color: #fff;
+}
+
 .right {
-  overflow-y: auto;
   scroll-behavior: smooth;
 }
 
@@ -57,7 +104,8 @@ html {
 }
 
 .right #about {
-  width: 100%;
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,8 +192,9 @@ html {
 }
 
 .right #experience {
-  width: 100%;
-  height: 100vh;
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,6 +207,10 @@ html {
           justify-content: center;
   font-family: 'Saira Extra Condensed', sans-serif;
   padding: 0 15px;
+}
+
+.right #experience .exp {
+  margin-top: 10rem;
 }
 
 .right #experience .project {
@@ -190,7 +243,8 @@ html {
 }
 
 .right #education {
-  width: 100%;
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
   height: 100vh;
   font-family: "Saira Extra Condensed";
   font-weight: 700;
@@ -224,7 +278,8 @@ html {
 }
 
 .right #skills {
-  width: 100%;
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +311,8 @@ html {
 }
 
 .right #contact {
-  width: 100%;
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,5 +360,37 @@ html {
   background-color: #f2f2f2;
   padding: 20px;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .left {
+    display: none;
+  }
+  .right #about {
+    margin-left: 0;
+    width: 100%;
+  }
+  .right #experience {
+    margin-left: 0;
+    width: 100%;
+  }
+  .right #education {
+    margin-left: 0;
+    width: 100%;
+  }
+  .right #skills {
+    margin-left: 0;
+    width: 100%;
+  }
+  .right #contact {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .top {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
