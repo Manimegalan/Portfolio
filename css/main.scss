@@ -353,12 +353,19 @@ html{
 				font-weight: 800;
 				letter-spacing: 0;
 			}
+			.navbar-collapse{
+				.menu{
+					.nav-link{
+						font-size: 1rem;
+					}
+				}
+			}
 		}
 	}
 
 	.right{
 		h2{
-			font-size: 1rem;
+			font-size: 3rem;
 			font-weight: 800;
 			margin-bottom: 2rem;
 		}
@@ -368,7 +375,7 @@ html{
 				font-size: 3.3rem;
 				.subheading{
 					font-weight: 300;
-					font-size: 0.8rem;
+					font-size: 1rem;
 					bottom: 1rem;
 				}
 			}
@@ -395,12 +402,12 @@ html{
 			.box{
 				margin-bottom: 1.5rem;
 				.college{
-					font-size: 0.8rem;
+					font-size: 1.18rem;
 					font-weight: 900;
 					margin-bottom: 0;
 				}
 				.pg, .dept, .cgpa, .year{
-					font-size: 0.7rem;
+					font-size: 1rem;
 					font-weight: 300;
 					margin-bottom: 0;
 				}
@@ -409,7 +416,7 @@ html{
 
 		#skills{
 			p{
-				font-size: 0.8rem;
+				font-size: 1.3rem;
 			}
 			.icons{
 				font-size: 2.5rem;
