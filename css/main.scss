@@ -114,7 +114,6 @@ html{
 
 			p {
 				font-weight: 700;
-				
 				margin: 0;
 
 				span {
@@ -172,7 +171,7 @@ html{
 	#experience{
 		width: calc(100% - 17rem);
 		margin-left: 17rem;
-		height: auto;
+		
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -345,3 +344,104 @@ html{
 		display: none;
 	}
   }
+
+@media only screen and (max-width: 545px){
+	.top{
+		.navbar{
+			.navbar-brand{
+				font-size: 1rem;
+				font-weight: 800;
+				letter-spacing: 0;
+			}
+		}
+	}
+
+	.right{
+		h2{
+			font-size: 1rem;
+			font-weight: 800;
+			margin-bottom: 2rem;
+		}
+
+		#about{
+			.name{
+				font-size: 3.3rem;
+				.subheading{
+					font-weight: 300;
+					font-size: 0.8rem;
+					bottom: 1rem;
+				}
+			}
+			.para1{
+				font-size: 0.8rem;
+				line-height: 1.2rem;
+			}
+
+			.icon{
+				.social-icon{
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+
+		#experience{
+			.exp{
+				margin: 3.6rem 0 0 0;
+			}
+		}
+
+		#education{
+			.box{
+				margin-bottom: 1.5rem;
+				.college{
+					font-size: 0.8rem;
+					font-weight: 900;
+					margin-bottom: 0;
+				}
+				.pg, .dept, .cgpa, .year{
+					font-size: 0.7rem;
+					font-weight: 300;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		#skills{
+			p{
+				font-size: 0.8rem;
+			}
+			.icons{
+				font-size: 2.5rem;
+				i{
+					margin: 15px 8px 0 0;
+				}
+			}
+		}
+
+		#contact{
+
+			input[type=text], select, textarea {
+				padding: 10px;
+				margin-top: 2px;
+				margin-bottom: 10px;
+			}
+			  
+			input[type=submit] {
+				background-color: #4CAF50;
+				color: white;
+				padding: 12px 20px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			  
+			input[type=submit]:hover {
+				background-color: #45a049;
+			}
+			.container{
+				font-size: 1rem;
+			}
+		}
+	}
+}

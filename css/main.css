@@ -194,7 +194,6 @@ html {
 .right #experience {
   width: calc(100% - 17rem);
   margin-left: 17rem;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,6 +390,79 @@ html {
 @media only screen and (min-width: 992px) {
   .top {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .top .navbar .navbar-brand {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+  .right h2 {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  .right #about .name {
+    font-size: 3.3rem;
+  }
+  .right #about .name .subheading {
+    font-weight: 300;
+    font-size: 0.8rem;
+    bottom: 1rem;
+  }
+  .right #about .para1 {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .right #about .icon .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .right #experience .exp {
+    margin: 3.6rem 0 0 0;
+  }
+  .right #education .box {
+    margin-bottom: 1.5rem;
+  }
+  .right #education .box .college {
+    font-size: 0.8rem;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+  .right #education .box .pg, .right #education .box .dept, .right #education .box .cgpa, .right #education .box .year {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  .right #skills p {
+    font-size: 0.8rem;
+  }
+  .right #skills .icons {
+    font-size: 2.5rem;
+  }
+  .right #skills .icons i {
+    margin: 15px 8px 0 0;
+  }
+  .right #contact input[type=text], .right #contact select, .right #contact textarea {
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+  .right #contact input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .right #contact input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .right #contact .container {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
