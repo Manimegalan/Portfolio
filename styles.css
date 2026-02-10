@@ -108,6 +108,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -118,6 +120,8 @@ body {
     background-color: var(--navy);
     min-height: 100vh;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -163,6 +167,8 @@ section {
     margin: 0 auto;
     padding: 100px 0;
     max-width: 1000px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -218,13 +224,17 @@ section {
     align-items: center;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 11;
     padding: 0px 50px;
     width: 100%;
+    max-width: 100vw;
     height: var(--nav-height);
     background-color: rgba(10, 25, 47, 0.85);
     backdrop-filter: blur(10px);
     transition: var(--transition);
+    box-sizing: border-box;
 }
 
 .header.scrolled {
@@ -365,7 +375,7 @@ section {
         align-items: center;
         position: relative;
         z-index: 10;
-        margin-right: -15px;
+        margin-right: 0;
         padding: 15px;
         border: 0;
         background-color: transparent;
@@ -415,6 +425,12 @@ section {
     }
 }
 
+@media (max-width: 480px) {
+    .menu-toggle {
+        padding: 10px;
+    }
+}
+
 /* ===========================
    Mobile Menu
    =========================== */
@@ -426,6 +442,7 @@ section {
     right: 0;
     padding: 50px 10px;
     width: min(75vw, 400px);
+    max-width: 100vw;
     height: 100vh;
     outline: 0;
     background-color: var(--light-navy);
@@ -434,6 +451,7 @@ section {
     transform: translateX(100vw);
     visibility: hidden;
     transition: var(--transition);
+    box-sizing: border-box;
 }
 
 .mobile-menu.open {
@@ -608,11 +626,16 @@ section {
    =========================== */
 #content {
     min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .main-container {
     padding: 0 150px;
     counter-reset: section;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 @media (max-width: 1080px) {
@@ -911,18 +934,14 @@ section {
     .tab-list {
         display: flex;
         overflow-x: auto;
-        width: calc(100% + 100px);
-        padding-left: 50px;
-        margin-left: -50px;
+        width: 100%;
         margin-bottom: 30px;
     }
 }
 
 @media (max-width: 480px) {
     .tab-list {
-        width: calc(100% + 50px);
-        padding-left: 25px;
-        margin-left: -25px;
+        width: 100%;
     }
 }
 
@@ -990,14 +1009,14 @@ section {
         width: 100%;
         max-width: var(--tab-width);
         height: 2px;
-        margin-left: 50px;
+        margin-left: 0;
         transform: translateX(0);
     }
 }
 
 @media (max-width: 480px) {
     .highlight {
-        margin-left: 25px;
+        margin-left: 0;
     }
 }
 
